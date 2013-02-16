@@ -21,7 +21,7 @@ class Torch5 < Formula
   def install
       mkdir 'build'
       cd 'build' do
-          system "cmake .. -DCMAKE_INSTALL_PREFIX=#{prefix}"
+          system 'cmake', '..', *std_cmake_args
           system 'make'
           system 'make install'
       end
