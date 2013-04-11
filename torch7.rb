@@ -2,13 +2,13 @@ require 'formula'
 
 class Torch7 < Formula
   homepage 'http://www.torch.ch/'
-  head 'git://github.com/andresy/torch.git'
+  head 'https://github.com/andresy/torch.git'
 
   depends_on 'cmake' => :build
   depends_on 'homebrew/versions/gcc48' => :build
   depends_on 'readline'
   depends_on 'gnuplot'
-  depends_on 'qt4'
+  depends_on 'qt'
   depends_on 'homebrew/science/openblas'
 
   def install
